@@ -1,0 +1,101 @@
+.main .cont {
+  height: 564px;
+  border: 6px solid #D7D7D7;
+  margin-top: 30px; }
+  .main .cont .main_l {
+    width: 602px;
+    height: 555px;
+    border-right: 1px solid #ccc;
+    padding: 30px 45px 60px 44px; }
+  .main .cont .main_l_c {
+    width: 514px;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+    margin-left: 0; }
+    .main .cont .main_l_c .main_p {
+      width: 256px;
+      height: 26px;
+      padding-bottom: 50px;
+      text-align: center;
+      border-bottom: 2px solid #CF000D;
+      position: relative; }
+      .main .cont .main_l_c .main_p h2 {
+        height: 25px;
+        border-right: 1px solid #ccc; }
+      .main .cont .main_l_c .main_p i {
+        width: 17px;
+        height: 28px;
+        background: url("../img/shouji.png") no-repeat;
+        position: absolute;
+        top: 3px;
+        left: 82px; }
+  .main .cont form {
+    margin: 30px 0 0 82px; }
+    .main .cont form input {
+      width: 354px;
+      height: 55px;
+      padding-left: 20px;
+      border: 1px solid #ccc;
+      color: #ccc;
+      margin-bottom: 9px; }
+    .main .cont form span {
+      color: #325E8F;
+      font-size: 10px;
+      margin-left: 5px; }
+    .main .cont form .box {
+      width: 354px;
+      border: 1px solid #ccc;
+      position: relative; }
+      .main .cont form .box span {
+        padding-left: 20px;
+        font-size: 14px;
+        color: #ccc; }
+      .main .cont form .box button {
+        padding: 10px;
+        margin-right: 50px; }
+      .main .cont form .box i {
+        width: 174px;
+        height: 28px;
+        background: url("../img/shouji.png") no-repeat;
+        position: absolute;
+        top: 15px;
+        left: 188px; }
+      .main .cont form .box input {
+        height: 40px;
+        margin-top: 10px; }
+    .main .cont form h2 {
+      font-size: 12px;
+      margin-top: 10px;
+      color: #000; }
+      .main .cont form h2 a {
+        color: #325E8F; }
+    .main .cont form .zhuce {
+      width: 354px;
+      height: 44px;
+      font-size: 16px;
+      border: 1px solid #B42B29;
+      background: #FD5351;
+      color: #fff;
+      text-align: center;
+      margin-top: 8px; }
+  .main .cont .main_r img {
+    width: 300px;
+    height: 356px;
+    margin: 95px 30px 0 30px; }
+
+footer {
+  height: 92px;
+  background: #F2F2F2;
+  padding-top: 52px; }
+  footer ul {
+    margin-left: 198px; }
+    footer ul li {
+      float: left;
+      font-size: 14px; }
+      footer ul li span {
+        border-right: 1px solid #000;
+        margin: 0 18px 0 18px; }
+  footer p {
+    margin-left: 100px;
+    font-size: 14px;
+    color: #000; }

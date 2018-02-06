@@ -1,0 +1,133 @@
+.header .cont {
+  height: 90px;
+  background: #fff;
+  position: relative; }
+  .header .cont h1 {
+    width: 199px;
+    height: 53px;
+    background: url("../img/logo1.jpg") no-repeat;
+    position: absolute;
+    top: 22px;
+    left: 90px; }
+
+.header_r {
+  padding-right: 80px; }
+  .header_r li {
+    float: left;
+    margin-right: 33px;
+    font-size: 12px;
+    margin-top: 34px;
+    color: #000;
+    position: relative; }
+    .header_r li:nth-child(2) i {
+      width: 20px;
+      height: 21px;
+      background: url("../img/set.png") no-repeat;
+      position: absolute;
+      top: 0;
+      left: -21px; }
+  .header_r h3 {
+    width: 15px;
+    height: 20px;
+    background: url("../img/ren.png") no-repeat;
+    position: absolute;
+    top: 0;
+    left: -18px; }
+
+.main .cont {
+  height: 437px;
+  margin-top: 40px;
+  padding-left: 90px; }
+  .main .cont img {
+    float: left; }
+  .main .cont .main_r {
+    float: left;
+    width: 494px;
+    height: 437px;
+    border: 1px solid #ccc;
+    margin-left: 50px; }
+    .main .cont .main_r .main_c {
+      padding: 20px 70px;
+      position: relative; }
+      .main .cont .main_r .main_c h2 {
+        position: relative;
+        padding-left: 150px;
+        font-size: 12px;
+        color: #000;
+        margin-bottom: 30px; }
+        .main .cont .main_r .main_c h2 i {
+          width: 32px;
+          height: 31px;
+          background: url("../img/p3.png") no-repeat;
+          position: absolute;
+          top: -9px;
+          left: 114px; }
+      .main .cont .main_r .main_c input {
+        width: 353px;
+        height: 57px;
+        padding-left: 30px; }
+      .main .cont .main_r .main_c span {
+        width: 21px;
+        height: 26px;
+        background: url("../img/p2.png") no-repeat;
+        position: absolute;
+        top: 130px;
+        left: 80px; }
+      .main .cont .main_r .main_c i {
+        width: 21px;
+        height: 23px;
+        background: url("../img/p1.png") no-repeat;
+        position: absolute;
+        top: 78px;
+        left: 76px; }
+      .main .cont .main_r .main_c .gou {
+        margin-top: 15px; }
+        .main .cont .main_r .main_c .gou input {
+          float: left;
+          width: 15px;
+          height: 15px; }
+        .main .cont .main_r .main_c .gou h5 {
+          float: left;
+          font-size: 12px;
+          color: #848484; }
+        .main .cont .main_r .main_c .gou h3 {
+          font-size: 12px;
+          color: #848484;
+          float: right; }
+      .main .cont .main_r .main_c button {
+        margin: 20px 0 10px 0;
+        width: 353px;
+        height: 47px;
+        background: #FE0A2E;
+        text-align: center;
+        color: #fff;
+        border: 1px solid #ccc; }
+
+.xin {
+  height: 100px;
+  padding-right: 158px; }
+  .xin button {
+    float: right;
+    width: 116px;
+    height: 40px;
+    background: #FE0A2E;
+    border: 1px solid #ccc;
+    color: #fff; }
+
+footer {
+  height: 92px;
+  background: #F2F2F2;
+  padding-top: 52px; }
+  footer ul {
+    padding-left: 420px;
+    text-align: center; }
+    footer ul li {
+      float: left;
+      font-size: 12px; }
+      footer ul li span {
+        border-right: 1px solid #000;
+        margin: 0 18px 0 18px; }
+  footer p {
+    padding-left: 300px;
+    font-size: 12px;
+    color: #000; }
