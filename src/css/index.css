@@ -80,8 +80,7 @@
     right: 20px; }
 
 .nav_p .cont {
-  height: 43px;
-  background: #ccc; }
+  height: 43px; }
   .nav_p .cont li {
     margin-top: 8px;
     float: left;
@@ -89,8 +88,16 @@
     .nav_p .cont li a {
       color: #333333;
       font-size: 14px; }
-    .nav_p .cont li:hover a {
-      color: #D02427; }
+  .nav_p .cont .nb {
+    width: 187px;
+    height: 45px;
+    background: #CC0210; }
+    .nav_p .cont .nb a {
+      line-height: 45px;
+      font-size: 20px;
+      color: #fff;
+      text-align: center;
+      margin-left: 10px; }
   .nav_p .cont h5 {
     float: right;
     width: 190px;
@@ -100,11 +107,11 @@
 .nav .cont .nav_l {
   float: left;
   width: 187px;
-  height: 475px;
+  height: 470px;
   background: #CA111D;
   position: relative;
   position: absolute;
-  top: 249px;
+  top: 259px;
   left: 30px;
   z-index: 1; }
   .nav .cont .nav_l .lt {
@@ -129,14 +136,16 @@
     width: 1030px;
     height: 500px;
     position: absolute;
-    top: 47px;
+    top: 0px;
     left: 186px;
     padding: 0 40px;
     display: none; }
     .nav .cont .nav_l .big .box_r {
+      background: #fff;
       width: 686px;
       height: 450px;
-      background: #ccc; }
+      padding-right: 100px;
+      position: absolute; }
       .nav .cont .nav_l .big .box_r .tab1 h4 {
         font-size: 16px;
         color: #000;
@@ -164,6 +173,7 @@
       .nav .cont .nav_l .big .box_r .tab3 h4 {
         font-size: 16px;
         color: #000;
+        text-align: left;
         border-bottom: 1px solid #ccc; }
       .nav .cont .nav_l .big .box_r .tab3 li {
         float: left; }
@@ -172,15 +182,23 @@
           border-right: 1px solid #B7B7B7;
           color: #E37D7F;
           padding: 0 6px; }
-      .nav .cont .nav_l .big .box_r .tab {
-        width: 200px;
-        margin: 0 200px; }
-        .nav .cont .nav_l .big .box_r .tab li float:left
-a {
+      .nav .cont .nav_l .big .box_r .tab h4 {
+        font-size: 16px;
+        color: #000;
+        text-align: left;
+        border-bottom: 1px solid #ccc; }
+      .nav .cont .nav_l .big .box_r .tab li {
+        float: left; }
+        .nav .cont .nav_l .big .box_r .tab li a {
           font-size: 14px;
           border-right: 1px solid #B7B7B7;
           color: #E37D7F;
           padding: 0 6px; }
+    .nav .cont .nav_l .big .tu h4 {
+      width: 240px;
+      height: 500px;
+      background: url("../img/aa.png") no-repeat;
+      float: right; }
 
 #baner {
   position: relative; }
@@ -188,11 +206,11 @@ a {
     display: block;
     height: 470px;
     width: 100%; }
-  #baner #sp {
+  #baner #page {
     position: absolute;
     top: 425px;
     left: 530px; }
-    #baner #sp span {
+    #baner #page span {
       padding: 5px;
       width: 50px;
       height: 50px;
@@ -217,179 +235,186 @@ a {
     color: #E01F35; }
 
 .midd .cont {
-  height: 4582px;
+  height: 4120px;
   background: #F5F5F5; }
   .midd .cont .box1 {
-    height: 325px;
-    background: #12cb54;
+    height: 660px;
     margin-top: 20px; }
     .midd .cont .box1 li {
-      margin-right: 12px;
-      margin-top: 25px;
-      background: pink;
-      height: 325px;
-      border: 1px solid #ccc; }
-  .midd .cont .box2 {
-    height: 320px;
-    background: #45acbb;
-    margin-top: 20px; }
-    .midd .cont .box2 li {
       float: left;
-      margin-right: 15px;
-      margin-top: 25px;
-      background: #f90;
-      width: 285px;
-      height: 325px;
+      text-align: center;
+      margin-right: 14px;
+      margin-top: 20px;
+      height: 310px;
       border: 1px solid #ccc; }
-  .midd .cont .box_h {
-    height: 614px;
-    background: #b23;
-    margin-top: 20px; }
-    .midd .cont .box_h h1 {
-      font-size: 18px;
-      padding: 10px 0; }
-    .midd .cont .box_h .box1_l {
-      width: 240px;
-      height: 614px;
-      padding-top: 10px; }
-    .midd .cont .box_h .box3 {
-      margin-top: 2px;
-      height: 614px;
-      width: 930px; }
-      .midd .cont .box_h .box3 li {
-        float: left;
-        width: 220px;
-        height: 300px;
-        background: yellow;
-        margin-right: 12px;
-        margin-top: 12px; }
+      .midd .cont .box1 li p {
+        font-size: 16px;
+        color: #000; }
+      .midd .cont .box1 li span {
+        color: red; }
   .midd .cont .box_u {
-    margin-top: 40px;
-    background: yellow;
-    height: 678px; }
+    height: 681px;
+    padding-top: 10px; }
     .midd .cont .box_u h1 {
       font-size: 18px;
       padding: 10px 0; }
-    .midd .cont .box_u .box1_l {
-      width: 240px;
-      height: 614px;
-      padding-top: 10px; }
     .midd .cont .box_u .box4 {
-      margin-top: 2px;
-      height: 614px;
-      width: 930px; }
-      .midd .cont .box_u .box4 li {
+      height: 681px; }
+      .midd .cont .box_u .box4 ul li {
+        text-align: center;
         float: left;
-        width: 220px;
+        width: 219px;
         height: 300px;
-        background: yellow;
+        background: #fff;
         margin-right: 12px;
-        margin-top: 12px; }
+        margin-top: 12px;
+        padding: 20px; }
+        .midd .cont .box_u .box4 ul li p {
+          font-size: 14px;
+          color: #000;
+          line-height: 40px; }
+        .midd .cont .box_u .box4 ul li span {
+          color: red; }
+        .midd .cont .box_u .box4 ul li img {
+          height: 190px;
+          width: 190px; }
   .midd .cont .box_p {
-    margin-top: 30px;
-    background: #2cc;
-    height: 678px; }
+    height: 681px;
+    padding-top: 10px; }
     .midd .cont .box_p h1 {
       font-size: 18px;
       padding: 10px 0; }
-    .midd .cont .box_p .box1_l {
-      width: 240px;
-      height: 614px;
-      padding-top: 10px; }
     .midd .cont .box_p .box5 {
-      margin-top: 2px;
-      height: 614px;
-      width: 930px; }
-      .midd .cont .box_p .box5 li {
+      height: 681px; }
+      .midd .cont .box_p .box5 ul li {
+        text-align: center;
         float: left;
-        width: 220px;
+        width: 219px;
         height: 300px;
-        background: yellow;
+        background: #fff;
         margin-right: 12px;
-        margin-top: 12px; }
+        margin-top: 12px;
+        padding: 20px; }
+        .midd .cont .box_p .box5 ul li p {
+          font-size: 14px;
+          color: #000;
+          line-height: 40px; }
+        .midd .cont .box_p .box5 ul li span {
+          color: red; }
+        .midd .cont .box_p .box5 ul li img {
+          height: 190px;
+          width: 190px; }
   .midd .cont .box_o {
-    background: #ba2;
-    height: 614px;
-    margin-top: 30px; }
+    height: 681px;
+    padding-top: 10px; }
     .midd .cont .box_o h1 {
       font-size: 18px;
       padding: 10px 0; }
-    .midd .cont .box_o .box1_l {
-      width: 240px;
-      height: 614px;
-      padding-top: 10px; }
     .midd .cont .box_o .box6 {
-      margin-top: 2px;
-      height: 614px;
-      width: 930px; }
-      .midd .cont .box_o .box6 li {
+      height: 681px; }
+      .midd .cont .box_o .box6 ul li {
+        text-align: center;
         float: left;
-        width: 220px;
+        width: 219px;
         height: 300px;
-        background: yellow;
+        background: #fff;
         margin-right: 12px;
-        margin-top: 12px; }
+        margin-top: 12px;
+        padding: 20px; }
+        .midd .cont .box_o .box6 ul li p {
+          font-size: 14px;
+          color: #000;
+          line-height: 40px; }
+        .midd .cont .box_o .box6 ul li span {
+          color: red; }
+        .midd .cont .box_o .box6 ul li img {
+          height: 190px;
+          width: 190px; }
   .midd .cont .box_e {
-    margin-top: 30px;
-    background: #23ffcb;
-    height: 614px; }
+    height: 376px;
+    padding-top: 10px; }
     .midd .cont .box_e h1 {
       font-size: 18px;
       padding: 10px 0; }
-    .midd .cont .box_e .box1_l {
-      width: 240px;
-      height: 614px;
-      padding-top: 10px; }
     .midd .cont .box_e .box7 {
-      margin-top: 2px;
-      height: 614px;
-      width: 930px; }
-      .midd .cont .box_e .box7 li {
+      height: 376px; }
+      .midd .cont .box_e .box7 ul li {
+        text-align: center;
         float: left;
-        width: 220px;
+        width: 219px;
         height: 300px;
-        background: yellow;
+        background: #fff;
         margin-right: 12px;
-        margin-top: 12px; }
+        margin-top: 12px;
+        padding: 20px; }
+        .midd .cont .box_e .box7 ul li p {
+          font-size: 14px;
+          color: #000;
+          line-height: 40px; }
+        .midd .cont .box_e .box7 ul li span {
+          color: red; }
+        .midd .cont .box_e .box7 ul li img {
+          height: 190px;
+          width: 190px; }
   .midd .cont .main_u {
     margin-top: 30px;
-    background: #000;
-    height: 315px; }
+    height: 337px; }
     .midd .cont .main_u h1 {
       font-size: 18px; }
-    .midd .cont .main_u li {
+    .midd .cont .main_u ul li {
+      text-align: center;
       float: left;
-      height: 315px;
-      width: 230px;
-      background: #bc23ba;
-      margin-right: 8px;
-      margin-top: 12px; }
+      width: 219px;
+      height: 300px;
+      background: #fff;
+      margin-right: 12px;
+      margin-top: 12px;
+      padding: 20px; }
+      .midd .cont .main_u ul li p {
+        font-size: 14px;
+        color: #000;
+        line-height: 40px; }
+      .midd .cont .main_u ul li span {
+        color: red; }
+      .midd .cont .main_u ul li img {
+        height: 190px;
+        width: 190px; }
   .midd .cont .main_b {
-    background: #cb4;
-    height: 390px;
+    height: 350px;
     margin-top: 30px; }
     .midd .cont .main_b h1 {
       font-size: 18px; }
     .midd .cont .main_b li {
+      text-align: center;
       float: left;
-      height: 390px;
+      height: 315px;
       width: 284px;
-      background: #bc2334;
+      background: #fff;
       margin-right: 13px;
       margin-top: 12px; }
+      .midd .cont .main_b li p {
+        font-size: 14px;
+        color: #000;
+        line-height: 40px; }
+      .midd .cont .main_b li span {
+        color: red; }
   .midd .cont .main_k {
-    background: #f34;
-    height: 257px;
+    height: 267px;
     margin-top: 30px; }
     .midd .cont .main_k h1 {
       font-size: 18px; }
     .midd .cont .main_k li {
       float: left;
-      height: 257px;
-      width: 283px;
-      background: #bc2cb3;
+      height: 230px;
+      width: 282px;
       margin-right: 13px;
       margin-top: 12px; }
+      .midd .cont .main_k li img {
+        width: 280px;
+        height: 170px; }
+      .midd .cont .main_k li p {
+        text-align: center;
+        color: #000; }
 
 .weibu {
   background: #3E3E3E;

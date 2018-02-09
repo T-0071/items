@@ -1,6 +1,5 @@
 .tou {
   height: 30px;
-  background: pink;
   border-bottom: 1px solid #ccc;
   margin-bottom: 8px; }
   .tou h1 {
@@ -28,8 +27,7 @@
 
 .main {
   width: 965px;
-  height: 842px;
-  border: 1px solid #ccc;
+  height: 470px;
   margin: 0 150px; }
   .main .main_t {
     border-bottom: 3px solid #CE0808;
@@ -55,3 +53,194 @@
       color: #fff;
       font-size: 16px;
       margin-bottom: 5px; }
+  .main .main_r {
+    padding-top: 10px;
+    color: #484848;
+    font-size: 12px;
+    height: 40px;
+    border-bottom: 1px solid #ccc; }
+    .main .main_r input {
+      float: left;
+      margin-left: 5px; }
+    .main .main_r li {
+      float: left;
+      padding: 0 40px; }
+  .main #st {
+    height: 180px;
+    background: #F6F6F6; }
+    .main #st .dd {
+      padding-left: 120px; }
+      .main #st .dd img {
+        margin-top: 8px;
+        height: 100px;
+        width: 100px; }
+      .main #st .dd h4 {
+        font-size: 14px; }
+      .main #st .dd .cv i {
+        font-size: 12px; }
+      .main #st .dd .cv h5 {
+        font-size: 20px;
+        color: #C40000; }
+  .main .lt {
+    margin-top: 5px;
+    background: #F6F6F6;
+    height: 40px;
+    border-bottom: 1px solid #ccc; }
+    .main .lt p {
+      padding-left: 9px;
+      font-size: 12px;
+      color: #999;
+      line-height: 40px; }
+  .main .jie {
+    height: 50px;
+    font-size: 12px;
+    color: #666666;
+    padding-top: 10px;
+    border-bottom: 1px solid #ccc; }
+    .main .jie input {
+      float: left;
+      margin-left: 5px; }
+    .main .jie .jie_l li {
+      float: left;
+      padding-right: 20px; }
+      .main .jie .jie_l li:nth-child(1) {
+        padding-left: 20px; }
+    .main .jie .jie_r li {
+      float: left;
+      padding-right: 10px; }
+      .main .jie .jie_r li span {
+        font-size: 30px;
+        font-weight: bold;
+        color: #CA0809; }
+      .main .jie .jie_r li:nth-child(1) {
+        padding-top: 18px; }
+  .main .main_f {
+    height: 50px;
+    padding-top: 10px; }
+    .main .main_f h3 {
+      float: left;
+      width: 100px;
+      height: 40px;
+      border: 1px solid #ccc;
+      line-height: 40px;
+      color: #000;
+      font-size: 12px;
+      text-align: center; }
+    .main .main_f p {
+      float: left;
+      font-size: 12px;
+      color: #484848;
+      padding: 10px 0 0 6px; }
+    .main .main_f button {
+      float: right;
+      border: 1px solid #ccc;
+      padding: 10px 16px;
+      background: #D30202;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 16px;
+      margin-bottom: 5px; }
+
+.new {
+  margin: 0 150px;
+  height: 597px;
+  border: 1px solid #ccc; }
+  .new h5 {
+    height: 34px;
+    background: #F8F8F8;
+    color: #9999A1;
+    font-size: 18px;
+    border-bottom: 1px solid #ccc; }
+  .new .new_c {
+    height: 597px; }
+    .new .new_c ul li {
+      text-align: center;
+      float: left;
+      width: 180px;
+      height: 260px;
+      background: #fff;
+      margin-right: 12px;
+      margin-top: 12px;
+      padding: 20px; }
+      .new .new_c ul li p {
+        font-size: 14px;
+        color: #000;
+        line-height: 40px; }
+      .new .new_c ul li span {
+        color: red; }
+      .new .new_c ul li img {
+        height: 110px;
+        width: 110px; }
+
+.weibu {
+  margin: 0 150px;
+  border: 1px solid #ccc;
+  height: 50px;
+  margin-top: 20px; }
+  .weibu ul {
+    float: left; }
+    .weibu ul li {
+      margin-top: 10px;
+      float: left;
+      padding: 0 50px;
+      border-right: 1px solid #ccc;
+      position: relative; }
+      .weibu ul li b {
+        width: 33px;
+        height: 34px;
+        background: url("../img/z1.png") no-repeat;
+        position: absolute;
+        top: -5px;
+        left: 10px; }
+      .weibu ul li i {
+        width: 37px;
+        height: 34px;
+        background: url("../img/z2.png") no-repeat;
+        position: absolute;
+        top: -4px;
+        left: 7px; }
+      .weibu ul li span {
+        width: 39px;
+        height: 34px;
+        background: url("../img/z3.png") no-repeat;
+        position: absolute;
+        top: -4px;
+        left: 7px; }
+      .weibu ul li h1 {
+        font-size: 18px;
+        color: #CB0505; }
+        .weibu ul li h1 p {
+          float: right;
+          font-size: 14px;
+          color: #D4D4D4;
+          margin: 4px 3px 0 0;
+          padding: 0 5px;
+          font-weight: bolder; }
+    .weibu ul:last-child(1) {
+      border-right: 0; }
+
+.guan {
+  height: 130px;
+  background: #FAFAFA;
+  margin: 0px 150px; }
+  .guan .yu {
+    margin-left: 330px; }
+    .guan .yu li {
+      margin-top: 20px;
+      float: left;
+      font-size: 12px;
+      color: #999999;
+      border-right: 1px solid #ccc;
+      padding: 0 10px; }
+  .guan p {
+    float: left;
+    padding: 20px 0 0 200px;
+    background: #FAFAFA;
+    font-size: 12px;
+    color: #999999; }
+  .guan h4 {
+    float: left;
+    width: 239px;
+    height: 51px;
+    background: url("../img/b1.png") no-repeat;
+    margin: 10px 0 0 340px; }

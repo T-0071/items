@@ -4,7 +4,8 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="../css/base1.css">
         <link rel="stylesheet" href="../css/login.css">
-       
+       <script src="../lib/jquery-3.2.1.js"></script>
+       <script src="../js/login.js"></script>
     </head>
     <body>
      <div class="header">
@@ -29,14 +30,14 @@
         <div class="main_r">
             <div class="main_c">
                 <h2><i></i>购酒网会员登录</h2>
-                <input type="text"  placeholder="邮箱/手机号码"/><i></i>
-                <input type="text" /><span></span>
+                <input type="text" id="tel" class="form-control" name="tel" placeholder="邮箱/手机号码"/><i></i>
+                <input type="text" id="password" class="form-control" name="password" /><span></span>
                 <div class="gou">
                     <input type="checkbox" /><h5>自动登录</h5>
                     <h3>忘记密码</h3>
         
                 </div>
-                    <button>登&nbsp;录</button>
+                    <button class="btn btn-success " id="btn">登&nbsp;录</button>
                     <hr/>
                 <div class="zhang">
                     <p style="font-size:14px;">使用合作账号登录</p>

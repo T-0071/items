@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/base1.css">
+        <link rel="stylesheet" href="../css/goods.css">
+    <link rel="stylesheet" href="../lib/jquery.gdsZoom/jquery.gdsZoom.css">
+    <script src="../lib/jquery-3.2.1.js"></script>
+     <script src="../js/good.js"></script>
+     <script src="../js/conmon1.js"></script>
+    <script src="../lib/jquery.gdsZoom/jquery.gdsZoom.js"></script>
+    <style>
+        img:hover{border:2px solid red;}
+        .gds-zoom-big img{min-width: 1000px;}
+    </style>
+    </head>
+    <body>
+      <script>
+        jQuery(function($){
+            $('.goods').gdsZoom({
+                position:'right'
+            });
+
+            $('.smallList').on('click','img',function(){
+                $('.goods img').attr({
+                    src:this.src,
+                    'data-big':this.dataset.big || this.src
+                })
+            })
+        });
+    </script>
+    
+
+     <div class="tou">
+             <h1>购酒网APP v </h1>
+            <ul class="tou_r">
+                    <li>Hi,请 <a href="#" style="color:#FFF600;border-right:0;padding:0 ;">登录</a>/<a href="#"style="color:#FFF600;padding:0 4px 0 8px;">注册</a></li>
+                    <li><a href="#">我的订单</a></li>
+                    <li><a href="#">个人中心</a></li>
+                    <li><a href="#">在线客服</a></li>
+                    <li><a href="#">购酒公告</a></li>
+                    <li><a href="#">帮助</a></li>
+                    <li><a href="#">提意见</a></li>
+                    <li><a href="#" style="border-right:0;margin-left:20px;"><i></i>400-722-1919</a></li>
+            </ul>
+            
+        </div> 
+
+  <div class="hader clearfix">
+        <div class="cont"> 
+            <h2></h2>
+            <h3></h3>
+            <img src="../img/t.gif" >
+            <input type="text" value="茅台飞天" /><button>搜索</button>
+        <ul class="ul_l">
+            <li><a href="#">茅台</a></li>
+            <li><a href="#">五粮液</a></li>
+            <li><a href="#">拉菲</a></li>
+            <li><a href="#">奔富</a></li>
+            <li><a href="#">洋河</a></li>
+            <li><a href="#">黄尾袋鼠</a></li>
+            <li><a href="#">剑南春</a></li>
+            <li><a href="#" style="border-right:0;">泸州老窑</a></li>
+        </ul>
+        <span>去购物车结算</span>
+        </div>
+   </div>
+     <div class="nav_p">
+            <div class="cont">
+                 
+            <ul>
+           <li class="nb"><a href="#">全部分类</a></li>
+                <li><a href="#">首页</a></li>
+                <li><a href="">特卖会</a></li>
+                <li><a href="">进口馆</a></li>
+                <li><a href="">商家采销</a></li>
+                <li><a href="">高端收藏</a></li>
+                <li><a href="">尾货直批</a></li>
+            </ul> 
+            <h5></h5>
+            </div>
+    </div>
+    <div class="nav">
+        <div class="cont">
+            <ul class="nav_l">
+                    <li class="lt"><a href="#"><span><img src="../img/1.png"></span>一键选购<i></i></a>
+                    <div class="big ">
+                        <div class="box_r ">
+                            <ul class="tab1">
+                                <h4>购酒推荐</h4>
+                                <li><a href="#">特卖会</a></li>
+                                <li><a href="#">高端收藏</a></li>
+                                <li><a href="#">大坛酒专场</a></li>
+                                <li><a href="">整箱购</a></li>
+                                <li><a href="#">婚宴酒</a></li>
+                                <li><a href="#" style="border-right:0;">年份老酒</a></li><br/>
+                            </ul>
+                            <ul class="tab2">
+                                <h4>红酒洋酒专场</h4>
+                                <li><a href="#">洋酒钜惠</a></li>
+                                <li><a href="#">名庄直采</a></li>
+                                <li><a href="#">红酒整箱钜惠</a></li><br/>
+                            </ul>
+
+                            <ul class="tab3">
+                                <h4>精选会场</h4>
+                                <li><a href="#">新品尝鲜</a></li>
+                                <li><a href="#">聚餐用酒</a></li>
+                                <li><a href="#">清仓特卖</a></li>
+                                <li><a href="#">居酒屋</a></li>
+                                
+                                <ul class="tab ">
+                                    <h4></h4>
+                                    <li><a href="#">舒心酱酒</a></li>
+                                </ul>
+                            </ul>
+                            <h4>商务推荐</h4>
+             
+                        </div>
+                    </div>
+                    </li>
+           
+                <li class="lt"><a href="#"><span><img src="../img/2.png"></span>白酒<i></i></a>
+                 <div class="big ">
+                        <div class="box_r ">
+                            <ul class="tab1">
+                                <h4>知名白酒品牌</h4>
+                                <li><a href="#">茅台</a></li>
+                                <li><a href="#">五粮液</a></li>
+                                <li><a href="#">剑南春</a></li>
+                                <li><a href="">整箱购</a></li>
+                                <li><a href="#">婚宴酒</a></li>
+                                <li><a href="#" style="border-right:0;">年份老酒</a></li><br/>
+                            </ul>
+                            <ul class="tab2">
+                                <h4>地域白酒品牌</h4>
+                                <li><a href="#">舒心</a></li>
+                                <li><a href="#">白云边</a></li>
+                                <li><a href="#">太白酒</a></li><br/>
+                            </ul>
+
+                            <ul class="tab3">
+                                <h4>香型</h4>
+                                <li><a href="#">酱香型</a></li>
+                                <li><a href="#">浓香型</a></li>
+                                <li><a href="#">馥郁香型</a></li>
+                                <li><a href="#">兼香型</a></li>
+                                
+                                <ul class="tab ">
+                                    <h4></h4>
+                                    <li><a href="#">舒心酱酒</a></li>  <br/>
+                                </ul>
+                            </ul>
+                            <h4>商务推荐</h4>
+             
+                        </div>
+                    </div>
+                    </li></li>
+                <li class="lt"><a href="#"><span><img src="../img/3.png"></span>葡萄酒<i></i></a>   <div class="big ">
+                        <div class="box_r ">
+                            <ul class="tab1">
+                                <h4>购酒推荐</h4>
+                                <li><a href="#">特卖会</a></li>
+                                <li><a href="#">高端收藏</a></li>
+                                <li><a href="#">大坛酒专场</a></li>
+                                <li><a href="">整箱购</a></li>
+                                <li><a href="#">婚宴酒</a></li>
+                                <li><a href="#" style="border-right:0;">年份老酒</a></li><br/>
+                            </ul>
+                            <ul class="tab2">
+                                <h4>红酒洋酒专场</h4>
+                                <li><a href="#">洋酒钜惠</a></li>
+                                <li><a href="#">名庄直采</a></li>
+                                <li><a href="#">红酒整箱钜惠</a></li><br/>
+                            </ul>
+
+                            <ul class="tab3">
+                                <h4>精选会场</h4>
+                                <li><a href="#">新品尝鲜</a></li>
+                                <li><a href="#">聚餐用酒</a></li>
+                                <li><a href="#">清仓特卖</a></li>
+                                <li><a href="#">居酒屋</a></li>
+                                
+                                <ul class="tab ">
+                                    <h4></h4>
+                                    <li><a href="#">舒心酱酒</a></li>  <br/>
+                                </ul>
+                            </ul>
+                            <h4>商务推荐</h4>
+             
+                        </div>
+                    </div>
+                    </li>  </li>
+                <li class="lt"><a href="#"><span><img src="../img/4.png"></span>洋酒<i></i> </a><div class="big ">
+                        <div class="box_r ">
+                            <ul class="tab1">
+                                <h4>购酒推荐</h4>
+                                <li><a href="#">特卖会</a></li>
+                                <li><a href="#">高端收藏</a></li>
+                                <li><a href="#">大坛酒专场</a></li>
+                                <li><a href="">整箱购</a></li>
+                                <li><a href="#">婚宴酒</a></li>
+                                <li><a href="#" style="border-right:0;">年份老酒</a></li><br/>
+                            </ul>
+                            <ul class="tab2">
+                                <h4>红酒洋酒专场</h4>
+                                <li><a href="#">洋酒钜惠</a></li>
+                                <li><a href="#">名庄直采</a></li>
+                                <li><a href="#">红酒整箱钜惠</a></li><br/>
+                            </ul>
+
+                            <ul class="tab3">
+                                <h4>精选会场</h4>
+                                <li><a href="#">新品尝鲜</a></li>
+                                <li><a href="#">聚餐用酒</a></li>
+                                <li><a href="#">清仓特卖</a></li>
+                                <li><a href="#">居酒屋</a></li>
+                                
+                                <ul class="tab ">
+                                    <h4></h4>
+                                    <li><a href="#">舒心酱酒</a></li>  <br/>
+                                </ul>
+                            </ul>
+                            <h4>商务推荐</h4>
+             
+                        </div>
+                    </div>
+                    </li></li>
+                <li class="lt"><a href="#"><span><img src="../img/5.png"></span>黄酒<i></i></a> <div class="big ">
+                        <div class="box_r ">
+                            <ul class="tab1">
+                                <h4>购酒推荐</h4>
+                                <li><a href="#">特卖会</a></li>
+                                <li><a href="#">高端收藏</a></li>
+                                <li><a href="#">大坛酒专场</a></li>
+                                <li><a href="">整箱购</a></li>
+                                <li><a href="#">婚宴酒</a></li>
+                                <li><a href="#" style="border-right:0;">年份老酒</a></li><br/>
+                            </ul>
+                            <ul class="tab2">
+                                <h4>红酒洋酒专场</h4>
+                                <li><a href="#">洋酒钜惠</a></li>
+                                <li><a href="#">名庄直采</a></li>
+                                <li><a href="#">红酒整箱钜惠</a></li><br/>
+                            </ul>
+
+                            <ul class="tab3">
+                                <h4>精选会场</h4>
+                                <li><a href="#">新品尝鲜</a></li>
+                                <li><a href="#">聚餐用酒</a></li>
+                                <li><a href="#">清仓特卖</a></li>
+                                <li><a href="#">居酒屋</a></li>
+                                
+                                <ul class="tab ">
+                                    <h4></h4>
+                                    <li><a href="#">舒心酱酒</a></li>  <br/>
+                                </ul>
+                            </ul>
+                            <h4>商务推荐</h4>
+             
+                        </div>
+                    </div>
+                    </li></li>
+                <li class="lt"><a href="#"><span><img src="../img/6.png"></span>清酒<i></i></a> <div class="big ">
+                        <div class="box_r ">
+                            <ul class="tab1">
+                                <h4>购酒推荐</h4>
+                                <li><a href="#">特卖会</a></li>
+                                <li><a href="#">高端收藏</a></li>
+                                <li><a href="#">大坛酒专场</a></li>
+                                <li><a href="">整箱购</a></li>
+                                <li><a href="#">婚宴酒</a></li>
+                                <li><a href="#" style="border-right:0;">年份老酒</a></li><br/>
+                            </ul>
+                            <ul class="tab2">
+                                <h4>红酒洋酒专场</h4>
+                                <li><a href="#">洋酒钜惠</a></li>
+                                <li><a href="#">名庄直采</a></li>
+                                <li><a href="#">红酒整箱钜惠</a></li><br/>
+                            </ul>
+
+                            <ul class="tab3">
+                                <h4>精选会场</h4>
+                                <li><a href="#">新品尝鲜</a></li>
+                                <li><a href="#">聚餐用酒</a></li>
+                                <li><a href="#">清仓特卖</a></li>
+                                <li><a href="#">居酒屋</a></li>
+                                
+                                <ul class="tab ">
+                                    <h4></h4>
+                                    <li><a href="#">舒心酱酒</a></li>  <br/>
+                                </ul>
+                            </ul>
+                            <h4>商务推荐</h4>
+             
+                        </div>
+                    </div>
+                    </li></li>
+                <li class="lt"><a href="#"><span><img src="../img/7.png"></span>啤酒<i></i></a> <div class="big ">
+                        <div class="box_r ">
+                            <ul class="tab1">
+                                <h4>购酒推荐</h4>
+                                <li><a href="#">特卖会</a></li>
+                                <li><a href="#">高端收藏</a></li>
+                                <li><a href="#">大坛酒专场</a></li>
+                                <li><a href="">整箱购</a></li>
+                                <li><a href="#">婚宴酒</a></li>
+                                <li><a href="#" style="border-right:0;">年份老酒</a></li><br/>
+                            </ul>
+                            <ul class="tab2">
+                                <h4>红酒洋酒专场</h4>
+                                <li><a href="#">洋酒钜惠</a></li>
+                                <li><a href="#">名庄直采</a></li>
+                                <li><a href="#">红酒整箱钜惠</a></li><br/>
+                            </ul>
+
+                            <ul class="tab3">
+                                <h4>精选会场</h4>
+                                <li><a href="#">新品尝鲜</a></li>
+                                <li><a href="#">聚餐用酒</a></li>
+                                <li><a href="#">清仓特卖</a></li>
+                                <li><a href="#">居酒屋</a></li>
+                                
+                                <ul class="tab ">
+                                    <h4></h4>
+                                    <li><a href="#">舒心酱酒</a></li>  <br/>
+                                </ul>
+                            </ul>
+                            <h4>商务推荐</h4>
+             
+                        </div>
+                    </div>
+                    </li></li>
+                    <li class="lt"><a href="#"><span><img src="../img/8.png"></span>酒具周边<i></i></a>
+                     <div class="big ">
+                        <div class="box_r ">
+                            <ul class="tab1">
+                                <h4>购酒推荐</h4>
+                                <li><a href="#">特卖会</a></li>
+                                <li><a href="#">高端收藏</a></li>
+                                <li><a href="#">大坛酒专场</a></li>
+                                <li><a href="">整箱购</a></li>
+                                <li><a href="#">婚宴酒</a></li>
+                                <li><a href="#" style="border-right:0;">年份老酒</a></li><br/>
+                            </ul>
+                            <ul class="tab2">
+                                <h4>红酒洋酒专场</h4>
+                                <li><a href="#">洋酒钜惠</a></li>
+                                <li><a href="#">名庄直采</a></li>
+                                <li><a href="#">红酒整箱钜惠</a></li><br/>
+                            </ul>
+
+                            <ul class="tab3">
+                                <h4>精选会场</h4>
+                                <li><a href="#">新品尝鲜</a></li>
+                                <li><a href="#">聚餐用酒</a></li>
+                                <li><a href="#">清仓特卖</a></li>
+                                <li><a href="#">居酒屋</a></li>
+                                
+                                <ul class="tab ">
+                                    <h4></h4>
+                                    <li><a href="#">舒心酱酒</a></li>  <br/>
+                                </ul>
+                            </ul>
+                            <h4>商务推荐</h4>
+             
+                        </div>
+                    </div>
+                    </li></li>
+                <li class="lt"><a href="#"><span><img src="../img/9.png"></span>新品<i></i> </a><div class="big ">
+                        <div class="box_r ">
+                            <ul class="tab1">
+                                <h4>购酒推荐</h4>
+                                <li><a href="#">特卖会</a></li>
+                                <li><a href="#">高端收藏</a></li>
+                                <li><a href="#">大坛酒专场</a></li>
+                                <li><a href="">整箱购</a></li>
+                                <li><a href="#">婚宴酒</a></li>
+                                <li><a href="#" style="border-right:0;">年份老酒</a></li><br/>
+                            </ul>
+                            <ul class="tab2">
+                                <h4>红酒洋酒专场</h4>
+                                <li><a href="#">洋酒钜惠</a></li>
+                                <li><a href="#">名庄直采</a></li>
+                                <li><a href="#">红酒整箱钜惠</a></li><br/>
+                            </ul>
+
+                            <ul class="tab3">
+                                <h4>精选会场</h4>
+                                <li><a href="#">新品尝鲜</a></li>
+                                <li><a href="#">聚餐用酒</a></li>
+                                <li><a href="#">清仓特卖</a></li>
+                                <li><a href="#">居酒屋</a></li>
+                                
+                                <ul class="tab ">
+                                    <h4></h4>
+                                    <li><a href="#">舒心酱酒</a></li>  <br/>
+                                </ul>
+                            </ul>
+                            <h4>商务推荐</h4>
+             
+                        </div>
+                    </div>
+                    </li></li>
+                <li class="lt"><a href="#"><span><img src="../img/10.png"></span>清仓<i></i></a> <div class="big ">
+                        <div class="box_r ">
+                            <ul class="tab1">
+                                <h4>购酒推荐</h4>
+                                <li><a href="#">特卖会</a></li>
+                                <li><a href="#">高端收藏</a></li>
+                                <li><a href="#">大坛酒专场</a></li>
+                                <li><a href="">整箱购</a></li>
+                                <li><a href="#">婚宴酒</a></li>
+                                <li><a href="#" style="border-right:0;">年份老酒</a></li><br/>
+                            </ul>
+                            <ul class="tab2">
+                                <h4>红酒洋酒专场</h4>
+                                <li><a href="#">洋酒钜惠</a></li>
+                                <li><a href="#">名庄直采</a></li>
+                                <li><a href="#">红酒整箱钜惠</a></li><br/>
+                            </ul>
+
+                            <ul class="tab3">
+                                <h4>精选会场</h4>
+                                <li><a href="#">新品尝鲜</a></li>
+                                <li><a href="#">聚餐用酒</a></li>
+                                <li><a href="#">清仓特卖</a></li>
+                                <li><a href="#">居酒屋</a></li>
+                                
+                                <ul class="tab ">
+                                    <h4></h4>
+                                    <li><a href="#">舒心酱酒</a></li>  <br/>
+                                </ul>
+                            </ul>
+                            <h4>商务推荐</h4>
+             
+                        </div>
+                    </div>
+                    </li></li>
+            </ul> 
+        </div>
+    </div> 
+    <div class="midd">
+        
+        <div class="cont">
+            <h1>首页>葡萄酒>奔富><span>澳大利亚 奔富洛神山庄 设拉子赤霞珠红葡萄 750ml*6【整箱装】</span></h1>
+
+        </div>
+    </div>
+        <div class="details">
+           
+            <div class="cont">
+            <div class="details_l fl">
+            <div class="goods">
+            <img src="" id="Bimg" data-big="../img/v.jpg" />
+    </div>
+    <div class="smallList">
+        <img src="../img/n1.jpg" >
+        <img src="../img/n2.jpg" alt="">
+        <img src="../img/n3.jpg" alt="">
+        <img src="../img/n4.jpg" alt="">
+         <img src="" id="Bi"  />
+    </div>                 
+                </div>
+                <div class="details_r" >
+                    <h4 id="name"></h4>
+                  <div class="cv">
+                     <i>活动价：</i>
+                    <h5 id="price"></h5>
+                  </div> 
+                <div class="xi">
+
+                  <p>配送至上海 单笔订单不满100元，收运费 满百包邮</p>
+                  <ul>
+                      <li>关注度<i>5768</i></li>
+                      <li>累计评价67<i>2131</i></li>
+                      <li>送积分<span>289</span>                
+                      </li>
+                  </ul>
+
+                </div>
+                    <div class="gou">
+                        <h2>立即购买</h2>
+                        <a href="car.html"><h3 id="toCar">加入购物车</h3></a>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

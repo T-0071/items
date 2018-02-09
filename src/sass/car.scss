@@ -1,5 +1,5 @@
 .tou{
-             height: 30px;background:pink;
+             height: 30px;
              border-bottom: 1px solid #ccc;
              margin-bottom: 8px;
         h1{
@@ -22,12 +22,13 @@
 
 }
 .main{
-        width: 965px;height: 842px;border:1px solid #ccc;
+        width: 965px;height:470px;
         margin:0 150px;
 
         .main_t{
             border-bottom:3px solid #CE0808;margin-top: 10px;
-            h1{float:left;
+            h1{
+                float:left;
                 font-size:18px;
               line-height:40px;margin-top: 10px;
             }
@@ -35,7 +36,8 @@
                 float:left;margin-left: 15px;font-weight:bold;
                 font-size:12px;color:#CE0808;line-height:50px;
             }
-            button{float:right;
+            button{
+                float:right;
                 border:1px solid #ccc;
                padding:10px 16px;
                 background:#D30202;
@@ -44,6 +46,232 @@
                 margin-bottom: 5px;
             }
 
+
+        }
+
+    .main_r{
+                padding-top: 10px; color:#484848;font-size:12px;height:40px;
+                border-bottom:1px solid #ccc;
+        input{
+            float:left;
+            margin-left: 5px;
+        }
+            li{
+                float:left;
+                padding:0 40px;
+
+                
+            }
+           
+
+    }
+    #st{
+        height:180px;
+       background:#F6F6F6;
+
+        .dd{padding-left: 120px;
+            img{margin-top: 8px;
+                 height:100px;width:100px;
+            }
+            h4{
+                font-size:14px;
+            }
+            .cv{
+                i{
+                    font-size:12px;
+                }
+                h5{
+                    font-size:20px;color:#C40000;
+                }
+            }
+
+        }
+        
+    }
+    .lt{
+        margin-top: 5px;
+      
+        background:#F6F6F6;
+       
+        height:40px;
+        border-bottom:1px solid #ccc;
+       
+   
+        p{
+            padding-left:9px;
+            font-size:12px;
+            color:#999;
+            line-height: 40px;
+        } 
+    }
+    .jie{
+        height:50px;font-size:12px;
+        color:#666666;
+        padding-top: 10px;
+        border-bottom:1px solid #ccc;
+
+        input{
+            float:left;margin-left:5px;
+        }
+        .jie_l{
+
+            li{
+                float:left;padding-right:20px;
+            
+                &:nth-child(1){
+                padding-left:20px;
+                }
+            }
+        }
+        .jie_r{
+            li{
+                float:left;padding-right: 10px;
+                span{
+                        font-size:30px;
+                        font-weight:bold;
+                        color:#CA0809;
+                }
+                &:nth-child(1){
+                    padding-top:18px;
+                }
+
+
+            }
+
+        }
+
+
+
+    }
+    .main_f{
+        height:50px;padding-top: 10px;
+
+        h3{
+            float:left;width: 100px;height: 40px;border:1px solid #ccc;line-height: 40px;
+            color:#000;font-size:12px;text-align:center;
+
+        }
+        p{float:left;
+            font-size:12px;color:#484848;padding: 10px 0 0 6px;}
+            button{float:right;
+                border:1px solid #ccc;
+               padding:10px 16px;
+                background:#D30202;
+                border-radius:10px;
+                color:#fff;font-size:16px;
+                margin-bottom: 5px;
+            }
+    }
+
+
+
+
+}
+    .new{margin:0 150px;
+        height: 597px;border:1px solid #ccc;
+            h5{
+                height:34px;background:#F8F8F8;color:#9999A1;font-size:18px;
+                border-bottom:1px solid #ccc;
+            }
+
+        .new_c{
+            height:597px;
+                ul{
+
+                    li{text-align:center;
+                         float:left; 
+                         width: 180px;height:260px; 
+                         background:
+                        #fff;
+                         margin-right: 12px;
+                         margin-top: 12px;
+                        padding:20px;
+                        p{
+
+                            font-size:14px;color:#000;line-height: 40px;
+                        }
+                        span{
+                            color:red;
+                        }
+                         img{
+                            height:110px;width:110px;
+                         }
+                    }
+                }
+                
+
+            }
+            
+        }
+
+    
+    
+.weibu{
+
+    margin:0 150px;
+    border:1px solid #ccc;height:50px;margin-top: 20px;
+
+    ul{
+        float:left;
+    
+    li{
+        margin-top:10px;float:left;padding:0 50px;border-right:1px solid #ccc;position:relative;
+
+        b{
+            width: 33px;height: 34px;background:url("../img/z1.png") no-repeat;position:absolute;top:-5px;left:10px;
+
+        }
+         i{
+            width: 37px;height: 34px;background:url("../img/z2.png") no-repeat;position:absolute;top:-4px;left:7px;
+
+        }
+         span{
+            width: 39px;height: 34px;background:url("../img/z3.png") no-repeat;position:absolute;top:-4px;left:7px;
+
+        }
+
+        h1{
+            font-size:18px;color:#CB0505; 
+            p{
+           float:right; font-size:14px;color:#D4D4D4;margin:4px 3px 0 0;padding:0 5px;font-weight:bolder;
+            }
+        }
+       
+       
+    }
+    
+ &:last-child(1){
+            border-right:0;
+        }
+
+    }
+}
+    .guan{
+            height:130px;
+            background:#FAFAFA;
+            margin:0px 150px;
+    
+        .yu{
+            margin-left: 330px;
+            li{
+                margin-top:20px;
+                float:left;font-size:12px;
+                color:#999999;border-right:1px solid #ccc;padding:0 10px;
+            }
+        }
+
+
+  
+
+        p{
+             float:left;
+             padding:20px 0 0 200px;
+            background:#FAFAFA;
+                font-size:12px;
+                 color:#999999;
+        }
+        h4{float:left;
+            width: 239px;height: 51px;background:url("../img/b1.png") no-repeat;margin:10px 0 0 340px;
 
         }
 

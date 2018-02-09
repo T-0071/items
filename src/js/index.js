@@ -1,69 +1,318 @@
-// jQuery(function($){
-//             $('.baner').xCarousel({
-//                 imgs:['../img/a1.jpg','../img/a2.jpg','../img/a3.jpg','../img/a4.jpg','../img/a6.jpg','../img/a7','../img/a8.jpg'],
-//                 index:2,
-//                 type:'fade'
-//             })
-//         });var photo = document.getElementById('photo');
+
 document.addEventListener('DOMContentLoaded',()=>{
         var box = document.getElementById('box');
-        var sp = document.getElementById('sp');
+        var page = document.getElementById('page');
         // spArr是一个类数组，索引值对应每一个span标签
-        var spArr = sp.getElementsByTagName('span');
-        console.log(spArr);
+        var sp = page.getElementsByTagName('span');
+        console.log(sp);
         var i=0;
         showTu();
         // 显示图片与圆圈的函数（）
         function showTu(){
             i++;
-            // 定义对应图片的小圆圈的索引，图片从1开始，spArr数组的索引值从0开始
+           
             var j=i-1;
             if(j<=0){
-                // 当小圆圈在第一张时，清除最后一个小圆圈的背景颜色
+             
                 j=8;
             }
-            // 清除上一个小圆圈的背景颜色，不然全部小圆圈的背景颜色都会改变
-            spArr[j-1].style.background = '#000';
+            
+            sp[j-1].style.background = '#000';
             if(i>8){
-                // 图片是最后一张的时候返回第一张
+              
                 i=1;
             }
-            photo.src = 'img/a' +i + '.jpg';
-            console.log(photo)
+            tupian.src = '../img/a' +i + '.jpg';
+            console.log(tupian)
             // 同时显示对应的小圆圈
-            spArr[i-1].style.background = '#EC2F20';
+            sp[i-1].style.background = '#EC2F20';
         }
         // 定时轮播时间
         var timer = setInterval(showTu,2000);
         // 鼠标移上去暂停
-        photo.onmouseover = function(){
+        tupian.onmouseover = function(){
             clearInterval(timer);
         }
         // 鼠标移走，轮播继续
-        photo.onmouseout = function(){
+        tupian.onmouseout = function(){
             timer = setInterval(showTu,2000);//一定要赋值给timer，不然清除不了这里的定时器
         }
         // 给每个span标签绑定点击事件
-        for(var j=0;j<spArr.length;j++){
-            spArr[j].onclick = getClk;
+        for(var j=0;j<sp.length;j++){
+            sp[j].onclick = getClk;
         }
         // 点击函数
         function getClk(){
-            // 点击的时候吧定时器关了，因为不关定时器会一直跑，图片一直会变化
+            
             clearInterval(timer);
             // 把定时器走动时的当前圆圈背景颜色去掉
-            spArr[i-1].style.background = '##000';
+            sp[i-1].style.background = '##000';
             // 添加点击的圆圈的背景颜色
             this.style.background = '#EC2F20';
             // 并获取当前点击小圆圈的位置
             var _number = this.className;
             _number = _number.charAt(1);
             console.log('this.className:',_number,typeof(_number));
-            photo.src = 'img/a' +_number + '.jpg';
-            // 把当前点击的位置重新赋值给轮播开始的位置，相当于重新定义了开始的位置
+            tupian.src = '../img/a' +_number + '.jpg';
+         
             i = _number;
             timer = setInterval(showTu,2000);
-            // console.log('i:',i);
-            // timer = setInterval(showTu,2000);
+            
         }
+
+
+//获取页面subject container盒子上元素
+    var box1 = document.querySelector('.box1');
+
+    ajax.get({
+       
+        url: `http://localhost:1708/src/api/index.php`,
+        success: function(data) {
+            console.log(data)
+
+            // 创建一个ul
+            //  根据数据生成html结构
+                    let ul = document.createElement('ul');
+                    ul.innerHTML = data.map(item=>{
+                        return `<li data-id="${item.id}">
+                                <a href="../html/list.html">
+                                <img  src="${item.img}">
+                                <p>${item.name}</p>
+                                <span>${item.price}</span>
+                                </a>
+                        </li>`
+                    }).join('');
+
+                    // 把ul写入页面
+                    box1.appendChild(ul);
+        }
+    })
+
+
+    var box4 = document.querySelector('.box4');
+
+    ajax.get({
+       
+        url: `http://localhost:1708/src/api/index_c.php`,
+        success: function(data) {
+            console.log(data)
+
+            // 创建一个ul
+            //  根据数据生成html结构
+                    let ul = document.createElement('ul');
+                    ul.innerHTML = data.map(item=>{
+                        return `<li data-id="${item.id}">
+                                <a href="../html/list.html">
+                                <img  src="${item.img}">
+                                <p>${item.name}</p>
+                                <span>${item.price}</span>
+                                </a>
+                        </li>`
+                    }).join('');
+
+                    // 把ul写入页面
+                    box4.appendChild(ul);
+
+
+
+
+        }
+    })
+
+
+
+
+//获取页面subject container盒子上元素
+    var box5 = document.querySelector('.box5');
+
+    ajax.get({
+       
+        url: `http://localhost:1708/src/api/index_e.php`,
+        success: function(data) {
+            console.log(data)
+
+            // 创建一个ul
+            //  根据数据生成html结构
+                    let ul = document.createElement('ul');
+                    ul.innerHTML = data.map(item=>{
+                        return `<li data-id="${item.id}">
+                                <a href="../html/list.html">
+                                <img  src="${item.img}">
+                                <p>${item.name}</p>
+                                <span>${item.price}</span>
+                                </a>
+                        </li>`
+                    }).join('');
+
+                    // 把ul写入页面
+                    box5.appendChild(ul);
+
+
+
+
+        }
+    })
+
+
+     var box6 = document.querySelector('.box6');
+
+    ajax.get({
+       
+        url: `http://localhost:1708/src/api/index_f.php`,
+        success: function(data) {
+            console.log(data)
+
+            // 创建一个ul
+            //  根据数据生成html结构
+                    let ul = document.createElement('ul');
+                    ul.innerHTML = data.map(item=>{
+                        return `<li data-id="${item.id}">
+                                <a href="../html/list.html">
+                                <img  src="${item.img}">
+                                <p>${item.name}</p>
+                                <span>${item.price}</span>
+                                </a>
+                        </li>`
+                    }).join('');
+
+                    // 把ul写入页面
+                    box6.appendChild(ul);
+
+
+
+
+        }
+    })
+
+     var box7 = document.querySelector('.box7');
+
+    ajax.get({
+       
+        url: `http://localhost:1708/src/api/index_g.php`,
+        success: function(data) {
+            console.log(data)
+
+            // 创建一个ul
+            //  根据数据生成html结构
+                    let ul = document.createElement('ul');
+                    ul.innerHTML = data.map(item=>{
+                        return `<li data-id="${item.id}">
+                                <a href="../html/list.html">
+                                <img  src="${item.img}">
+                                <p>${item.name}</p>
+                                <span>${item.price}</span>
+                                </a>
+                        </li>`
+                    }).join('');
+
+                    // 把ul写入页面
+                    box7.appendChild(ul);
+
+
+
+
+        }
+    })
+
+
+
+     var main_u = document.querySelector('.main_u');
+
+    ajax.get({
+       
+        url: `http://localhost:1708/src/api/index_h.php`,
+        success: function(data) {
+            console.log(data)
+
+            // 创建一个ul
+            //  根据数据生成html结构
+                    let ul = document.createElement('ul');
+                    ul.innerHTML = data.map(item=>{
+                        return `<li data-id="${item.id}">
+                                <a href="../html/list.html">
+                                <img  src="${item.img}">
+                                <p>${item.name}</p>
+                                <span>${item.price}</span>
+                                </a>
+                        </li>`
+                    }).join('');
+
+                    // 把ul写入页面
+                    main_u.appendChild(ul);
+
+
+
+
+        }
+    })
+
+
+
+     var main_b = document.querySelector('.main_b');
+
+    ajax.get({
+       
+        url: `http://localhost:1708/src/api/index_r.php`,
+        success: function(data) {
+            console.log(data)
+
+            // 创建一个ul
+            //  根据数据生成html结构
+                    let ul = document.createElement('ul');
+                    ul.innerHTML = data.map(item=>{
+                        return `<li data-id="${item.id}">
+                                <a href="../html/list.html">
+                                <img  src="${item.img}">
+                                <p>${item.name}</p>
+                                <span>${item.price}</span>
+                                </a>
+                        </li>`
+                    }).join('');
+
+                    // 把ul写入页面
+                    main_b.appendChild(ul);
+
+
+
+
+        }
+    })
+
+
+
+     var main_k = document.querySelector('.main_k');
+
+    ajax.get({
+       
+        url: `http://localhost:1708/src/api/index_s.php`,
+        success: function(data) {
+            console.log(data)
+
+            // 创建一个ul
+            //  根据数据生成html结构
+                    let ul = document.createElement('ul');
+                    ul.innerHTML = data.map(item=>{
+                        return `<li data-id="${item.id}">
+                                <a href="../html/list.html">
+                                <img  src="${item.img}">
+                                <p>${item.name}</p>
+                                <span>${item.price}</span>
+                                </a>
+                        </li>`
+                    }).join('');
+
+                    // 把ul写入页面
+                    main_k.appendChild(ul);
+
+
+
+
+        }
+    })
+
+
+
+
+
+
     });

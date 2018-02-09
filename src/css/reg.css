@@ -1,87 +1,124 @@
+.header .cont {
+  height: 90px;
+  background: #fff;
+  position: relative; }
+  .header .cont h1 {
+    width: 199px;
+    height: 53px;
+    background: url("../img/logo1.jpg") no-repeat;
+    position: absolute;
+    top: 22px;
+    left: 90px; }
+
+.header_r {
+  padding-right: 80px; }
+  .header_r li {
+    float: left;
+    margin-right: 33px;
+    font-size: 12px;
+    margin-top: 34px;
+    color: #000;
+    position: relative; }
+    .header_r li:nth-child(2) i {
+      width: 20px;
+      height: 21px;
+      background: url("../img/set.png") no-repeat;
+      position: absolute;
+      top: 0;
+      left: -21px; }
+  .header_r h3 {
+    width: 15px;
+    height: 20px;
+    background: url("../img/ren.png") no-repeat;
+    position: absolute;
+    top: 0;
+    left: -18px; }
+
 .main .cont {
-  height: 564px;
+  height: 600px;
   border: 6px solid #D7D7D7;
   margin-top: 30px; }
   .main .cont .main_l {
-    width: 602px;
+    width: 500px;
     height: 555px;
     border-right: 1px solid #ccc;
     padding: 30px 45px 60px 44px; }
-  .main .cont .main_l_c {
-    width: 514px;
-    height: 50px;
-    border-bottom: 1px solid #ccc;
-    margin-left: 0; }
-    .main .cont .main_l_c .main_p {
-      width: 256px;
-      height: 26px;
-      padding-bottom: 50px;
-      text-align: center;
-      border-bottom: 2px solid #CF000D;
-      position: relative; }
-      .main .cont .main_l_c .main_p h2 {
-        height: 25px;
-        border-right: 1px solid #ccc; }
-      .main .cont .main_l_c .main_p i {
-        width: 17px;
-        height: 28px;
-        background: url("../img/shouji.png") no-repeat;
-        position: absolute;
-        top: 3px;
-        left: 82px; }
-  .main .cont form {
-    margin: 30px 0 0 82px; }
-    .main .cont form input {
-      width: 354px;
-      height: 55px;
-      padding-left: 20px;
-      border: 1px solid #ccc;
-      color: #ccc;
-      margin-bottom: 9px; }
-    .main .cont form span {
-      color: #325E8F;
-      font-size: 10px;
-      margin-left: 5px; }
-    .main .cont form .box {
-      width: 354px;
-      border: 1px solid #ccc;
-      position: relative; }
-      .main .cont form .box span {
-        padding-left: 20px;
-        font-size: 14px;
-        color: #ccc; }
-      .main .cont form .box button {
-        padding: 10px;
-        margin-right: 50px; }
-      .main .cont form .box i {
-        width: 174px;
-        height: 28px;
-        background: url("../img/shouji.png") no-repeat;
-        position: absolute;
-        top: 15px;
-        left: 188px; }
-      .main .cont form .box input {
+    .main .cont .main_l .main_l_c {
+      width: 500px;
+      height: 50px;
+      border-bottom: 1px solid #ccc;
+      margin-left: 0; }
+      .main .cont .main_l .main_l_c .main_p {
+        width: 256px;
+        height: 26px;
+        padding-bottom: 50px;
+        text-align: center;
+        border-bottom: 2px solid #CF000D;
+        position: relative; }
+        .main .cont .main_l .main_l_c .main_p h2 {
+          height: 25px;
+          border-right: 1px solid #ccc; }
+        .main .cont .main_l .main_l_c .main_p i {
+          width: 17px;
+          height: 28px;
+          background: url("../img/shouji.png") no-repeat;
+          position: absolute;
+          top: 3px;
+          left: 82px; }
+    .main .cont .main_l .zhuce {
+      margin: 30px 0 0 40px; }
+      .main .cont .main_l .zhuce input {
+        width: 250px;
         height: 40px;
-        margin-top: 10px; }
-    .main .cont form h2 {
-      font-size: 12px;
-      margin-top: 10px;
-      color: #000; }
-      .main .cont form h2 a {
-        color: #325E8F; }
-    .main .cont form .zhuce {
-      width: 354px;
-      height: 44px;
-      font-size: 16px;
-      border: 1px solid #B42B29;
-      background: #FD5351;
-      color: #fff;
-      text-align: center;
-      margin-top: 8px; }
-  .main .cont .main_r img {
-    width: 300px;
-    height: 356px;
-    margin: 95px 30px 0 30px; }
+        border: 1px solid #ccc;
+        color: #ccc;
+        margin-bottom: 9px; }
+      .main .cont .main_l .zhuce .huoqu {
+        float: left; }
+      .main .cont .main_l .zhuce #yzm {
+        float: left;
+        margin-left: 10px;
+        width: 120px;
+        border: 1px solid #ccc;
+        height: 50px;
+        padding-right: 00px;
+        font-size: 20px;
+        text-align: center;
+        line-height: 50px;
+        background: #ccc; }
+      .main .cont .main_l .zhuce button {
+        float: left;
+        margin-left: 10px;
+        padding: 10px;
+        margin-right: 20px;
+        margin-top: 8px; }
+      .main .cont .main_l .zhuce .output {
+        margin-top: 20px;
+        height: 30px;
+        color: red; }
+      .main .cont .main_l .zhuce h2 {
+        float: left;
+        font-size: 12px;
+        color: #000; }
+        .main .cont .main_l .zhuce h2 a {
+          color: #325E8F; }
+      .main .cont .main_l .zhuce h3 {
+        font-size: 12px;
+        color: #000; }
+      .main .cont .main_l .zhuce .btn {
+        width: 356px;
+        height: 44px;
+        font-size: 16px;
+        border: 1px solid #B42B29;
+        background: #FD5351;
+        color: #fff;
+        text-align: center;
+        margin-top: 8px;
+        line-height: 40px; }
+    .main .cont .main_l .main_r img {
+      width: 300px;
+      height: 300px;
+      padding: 20px; }
 
 footer {
   height: 92px;
